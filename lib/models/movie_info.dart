@@ -8,6 +8,7 @@ class MovieInfo {
   final String plot;
   final String poster;
   final String imdbRating;
+  final String imdbId;
   final String metaScore;
 
   MovieInfo(
@@ -20,7 +21,8 @@ class MovieInfo {
         this.plot,
         this.poster,
         this.imdbRating,
-        this.metaScore});
+      this.imdbId,
+      this.metaScore});
 
   factory MovieInfo.fromJSON(Map<String, dynamic> json) {
     return MovieInfo(
@@ -32,6 +34,7 @@ class MovieInfo {
         director: json['Director'],
         plot: json['Plot'],
         poster: json['Poster'],
+        imdbId: json['imdbID'],
         imdbRating: json['imdbRating'],
         metaScore: json['Metascore']);
   }

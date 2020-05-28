@@ -13,10 +13,10 @@ class Movie {
     return Movie(
         title: json['Title'],
         imdbId: json['IMDb ID'],
-        genre: json['Genre'],
         year: json['Year'],
         type: json['Type'],
         poster: json['Poster'],
+        genre: json['Genre'],
         imdbRating: json['imdbID']);
   }
 }

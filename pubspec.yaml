@@ -22,7 +22,7 @@ flutter:
 
   uses-material-design: true
 
-  fonts:
-    - family: Arvo
-      fonts:
-        - asset: assets/fonts/Arvo-Bold.ttf
+#  fonts:
+#    - family: Arvo
+#      fonts:
+#        - asset: assets/fonts/Arvo-Bold.ttf

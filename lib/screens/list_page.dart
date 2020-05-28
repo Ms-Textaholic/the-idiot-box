@@ -31,10 +31,6 @@ class _ListPageState extends State<ListPage> {
     );
   }
 
-  @override
-  void initState() {
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +48,6 @@ class _ListPageState extends State<ListPage> {
             'The Idiot Box',
           style: TextStyle(
             color: Colors.black,
-            fontFamily: 'Arvo',
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -75,15 +70,15 @@ class _ListPageState extends State<ListPage> {
                 onPressed: () => setState(() {
                       searchText = searchTextController.text;
                        // viewModel.search(searchText);
-                      searchTextController.clear();
-                       SystemChannels.textInput.invokeMethod( 'TextInput.hide' );
+                    // searchTextController.clear();
+                    SystemChannels.textInput.invokeMethod( 'TextInput.hide' );
                   }),
               ),
             ]),
             padding: EdgeInsets.all(10),
           ),
            if(searchText.length>0)
-              FutureBuilder<List<ListViewModel>>(
+             FutureBuilder<List<Movie>>(
                 future: search(searchText),
                 builder: (context, snapshot){
                   if(snapshot.hasData){
