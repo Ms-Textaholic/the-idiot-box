@@ -1,0 +1,28 @@
+name: theidiotbox
+description: Virtual Idiot Box which lets you search for movies and TV Shows, add them to your list and rate them. 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.2.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  provider: 4.0.5+1
+  http: ^0.12.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  fonts:
+    - family: Arvo
+      fonts:
+        - asset: assets/fonts/Arvo-Bold.ttf
