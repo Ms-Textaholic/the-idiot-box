@@ -3,8 +3,8 @@ import 'package:http/http.dart' as http;
 import 'package:theidiotbox/models/movies.dart';
 import 'package:theidiotbox/models/movie_info.dart';
 
-const API_KEY = "f3ccb078";
-const API_URL ="http://www.omdbapi.com/?i=tt3896198&apikey=f3ccb078";
+const API_KEY = "YOURKEY";
+const API_URL ="http://www.omdbapi.com/?i=tt3896198&apikey=YOURKEY";
 
 Future<List<Movie>> search(keyword) async {
   final response = await http.get('$API_URL$API_KEY&s=$keyword');
