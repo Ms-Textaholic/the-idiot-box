@@ -1,4 +1,4 @@
-# theidiotbox
+# The Idiot Box
 
 Virtual Idiot Box which lets you search for movies and TV Shows, add them to your list and rate them. 
 
